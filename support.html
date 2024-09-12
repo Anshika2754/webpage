@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Page</title>
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+    <div class="support-container">
+        <h1>Support Services</h1>
+        
+        <div class="support-section">
+            <button class="dropdown-btn" onclick="toggleDropdown('counseling')">Counseling Services</button>
+            <div id="counseling" class="dropdown-content">
+                <p>Get personalized counseling support to improve mental health and wellbeing. Our experts are here to help you with stress management, work-life balance, and more.</p>
+                <ul>
+                    <li>Stress Management</li>
+                    <li>Work-Life Balance</li>
+                    <li>Family Counseling</li>
+                </ul>
+                <form>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="support-section">
+            <button class="dropdown-btn" onclick="toggleDropdown('farming')">Farming Techniques</button>
+            <div id="farming" class="dropdown-content">
+                <p>Learn modern and sustainable farming techniques to maximize your yield. We provide resources and expert advice on:</p>
+                <ul>
+                    <li>Crop Rotation</li>
+                    <li>Organic Farming</li>
+                    <li>Water Conservation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="support-section">
+            <button class="dropdown-btn" onclick="toggleDropdown('rentals')">Product Rentals</button>
+            <div id="rentals" class="dropdown-content">
+                <p>Rent the latest farming equipment and tools to enhance your productivity. Available products include:</p>
+                <ul>
+                    <li>Tractors</li>
+                    <li>Irrigation Systems</li>
+                    <li>Plowing Equipment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="support.js"></script>
+</body>
+</html>
+
